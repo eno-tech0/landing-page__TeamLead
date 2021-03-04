@@ -1,0 +1,551 @@
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+li {
+	list-style-type: none;
+}
+
+p {
+	font-size: 1.2rem;
+	text-align: justify;
+	font-family: serif;
+	letter-spacing: 0.2rem;
+}
+
+.product {
+	min-width: 10rem;
+	max-height: 50vh;
+	max-width: 30vw;
+}
+
+/* PROMO */
+
+#promo {
+	overflow: hidden;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+	background: linear-gradient(to bottom, rgba(47, 0, 51, 0.644) 30%, #fff);
+}
+
+#promo-block {
+	background: rgba(0,0,0,0.6);
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+}
+
+#promo-title {
+	color: #fff;
+	background-color: rgba(0,0,0,0.7);
+	text-transform: uppercase;
+	width: 100%;
+	margin: 0;
+	padding: 4vh;
+	font-size: 3rem;
+}
+
+#promo-content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#promo-image {
+	opacity: 0.5;
+	align-self: center;
+	margin: 5vw;
+}
+
+#promo-desc {
+	align-self: center;
+	margin: 5vw;
+	text-align: left;
+}
+
+#promo-desc li {
+	color: #fff;
+	font-size: 2rem;
+	border-bottom: 2px solid #fff;
+	margin-bottom: 5rem;
+}
+
+.promo-order {
+	text-decoration: none;
+	color: #fff;
+	border: 2px solid #fff;
+	padding: 1.5rem 4.5rem;
+	background-color: rgba(50,0,50,0.7);
+}
+
+.promo-order:hover {
+	background-color: rgba(255,255,255,0.6);
+	color: rgb(50,0,50);
+	border: 2px solid rgb(50,0,50);
+}
+
+#promo video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/* min-height: 100%; */
+}
+
+/* STRUCTURE PRODUCT */
+
+#structure {
+	padding: 5rem 0;
+	background: linear-gradient(to bottom, rgba(47, 0, 51, 0.644) 30%, #fff), url('media/structure-bg.jpg');
+	background-size: cover;
+	text-align: center;
+}
+
+#structure-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+.structure-component {
+	margin-bottom: 2rem;
+}
+
+.component-content {
+	width: 8rem;
+	height: 8rem;
+	padding: 1rem;
+	border-radius: 50%;
+	background-color: rgba(141, 146, 216, 0.479);
+}
+.component-image {
+	width: 5rem;
+	height: 5rem;
+}
+
+.component-desc {
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+#product-photo {
+	align-self: center;
+	align-items: center;
+	margin: 0 8vw;
+}
+
+/* REVIEWS */
+
+#reviews {
+	padding: 5rem 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.reviews-btn {
+	border-radius: 50%;
+	box-shadow: 2px 2px 5px rgba(50,0,50,0.5);
+	border: none;
+	background-color: rgba(50,0,50,0.5);
+	min-width: 3rem;
+	min-height: 3rem;
+	font-size: 3rem;
+	line-height: 1em;
+	align-self: center;
+	cursor: pointer;
+	font-family: serif;
+	color: rgba(37, 1, 37, 0.7);
+}
+
+.review-content {
+	margin: 0 5rem;
+	max-width: 30vw;
+}
+
+.slider-right {
+	animation: slider-right 2s ease;
+}
+
+.slider-left {
+	animation: slider-left 2s ease;
+}
+
+@keyframes slider-right {
+	0% {
+		opacity: 0;
+		transform: translateX(3vw);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slider-left {
+	0% {
+		opacity: 0;
+		transform: translateX(-3vw);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.review-image {
+	width: 100%;
+	border-radius: 6rem;
+}
+
+.review-name {
+	text-transform: uppercase;
+	font-size: 2rem;
+	color: #000;
+}
+
+.review-desc {
+	color: #000;
+}
+
+/* PROMO-2 */
+
+#promotion {
+	text-align: center;
+	padding: 5rem 0;
+	background: linear-gradient(to bottom, rgba(58, 2, 63, 0.87) 40%, #fff);
+}
+
+#promotion-content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#promotion-image {
+	align-self: center;
+	margin-right: 10vw;
+	max-width: 40vw;
+}
+
+#promotion-desc {
+	max-width: 35vw;
+	align-self: center;
+	color: #fff;
+}
+
+#promotion ul {
+	margin-bottom: 3rem;
+}
+
+#promotion li {
+	display: inline;
+	font-size: 2rem;
+	margin-right: 2rem;
+	color: rgb(15, 15, 15);
+}
+
+/* BOOKING FORM */
+
+#booking-form {
+	padding: 5rem 0;
+	text-align: center;
+	background: radial-gradient(#fff, rgb(56, 6, 56));
+}
+
+#booking-title {
+	text-transform: uppercase;
+	font-size: 2.5rem;
+}
+
+#booking-timer {
+	font-size: 2rem;
+}
+
+#booking-content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#booking-product {
+	align-self: center;
+}
+
+#booking-image {
+	margin-bottom: 6vh;
+}
+
+#booking-timer {
+	padding: 2rem;
+	background-color: rgba(56, 6, 56, 0.7);
+	margin-bottom: 2rem;
+}
+
+form {
+	align-self: center;
+	margin-left: 5vw;
+}
+
+form h3 {
+	color:rgb(63, 51, 65);
+}
+
+form input {
+	width: 30vw;
+	padding: 0.6rem;
+	outline: none;
+	margin-bottom: 0.3rem;
+}
+
+form input[type="submit"] {
+	margin-top: 5rem;
+	border: none;
+	box-shadow: 2px 2px 5px rgba(50,0,50,0.5);
+	background-color: rgba(83, 27, 83, 0.795);
+	color: #fff;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+#booking-price {
+	display: flex;
+}
+
+#old-price {
+	color: rgb(63, 47, 62);
+	position: relative;
+	margin-right: 1rem;
+	align-self: center;
+}
+
+#old-price::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: rgb(63, 47, 62);
+}
+
+#new-price {
+	display: inline-block;
+	height: 3rem;
+	width: 10rem;
+	font-weight: bold;
+	font-size: 2rem;
+	color: red;
+	opacity: 0.6;
+	animation: price 1.5s infinite ease;
+}
+
+@keyframes price {
+	0% {
+		font-size: 2rem;
+		opacity: 0.6;
+	}
+
+	50% {
+		font-size: 2.5rem;
+		opacity: 1;
+	}
+
+	100% {
+		font-size: 2rem;
+		opacity: 0.6;
+	}
+}
+
+#name-block, #phone-block {
+	position: relative;
+}
+
+#booking-name, #booking-phone {
+	transition: all .2s linear;
+}
+
+#booking-name + label, #booking-phone + label {
+	position: absolute;
+	color: rgba(56, 6, 56, 0.4);
+	left: 8px;
+	bottom: 10px;
+}
+
+#booking-name:focus, #booking-phone:focus {
+	padding-top: 18px;
+}
+
+#booking-name:focus + label, #booking-phone:focus + label {
+	font-size: 0.8rem;
+	bottom: 30px;
+}
+
+
+
+.hide {
+	display: none;
+}
+/* MEDIA */
+
+@media (max-width: 1767px) {
+	#promo video {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	#promo-content {
+		margin-bottom: 10vh;
+	}
+}
+
+@media (max-width: 1500px) {
+	#promo-content {
+		margin-bottom: 20vh;
+	}
+}
+
+@media (max-width: 878px) {
+	#structure-block {
+		margin-bottom: 4vh;
+	}
+	#structure-right, #structure-left {
+		display: flex;
+		justify-content: center;
+	}
+	.structure-component {
+		margin-right: 10vw;
+	}
+	.structure-component:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.preview-content {
+		min-width: 60vw;
+		margin: 2vw;
+	}
+
+	#promotion-image {
+		min-width: 20rem;
+		max-height: 40vh;
+		margin-right: 2rem;
+	}
+
+	#promotion-desc {
+		max-width: 40rem;
+		margin: 0 4vw;
+	}
+	#booking-content {
+		margin: 0 4vw;
+	}
+}
+
+@media (max-width: 717px) {
+	#promo-image {
+		min-width: 10rem;
+		max-width: 30vw;
+	}
+
+	#product-photo {
+		width: 100%;
+	}
+
+	#product-photo image {
+		min-width: 10rem;
+		max-width: 30vw;
+	}
+
+	.structure-component {
+		max-width: 15vw;
+	}
+	.component-content {
+		min-width: 4rem;
+		min-height: 4rem;
+		width: 15vw;
+		height: 15vw;
+	}
+	.component-image {
+		min-width: 2rem;
+		min-height: 2rem;
+		width: 8vw;
+		height: 8vw;
+	}
+
+	.component-desc {
+		font-size: 0.7rem;
+	}
+
+	#promo-content {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#promo-desc li{
+		margin-bottom: 2vh;
+		text-align: center;
+	}
+
+	#promo-desc ul {
+		margin-bottom: 10vh;
+	}
+
+	form {
+		min-width: 12rem;
+	}
+
+	#booking-image {
+		min-width: 7rem;
+		max-width: 30vw;
+		align-self: center;
+	}
+}
+
+@media (max-width: 412px) {
+	#promo-title {
+		font-size: 2rem;
+	}
+
+	#promo-desc li {
+		font-size: 1.8rem;
+	}
+	.promo-order {
+		padding: 0.8rem 1.7rem;
+	}
+
+	.previews-btn {
+		font-size: 2rem;
+	}
+}
+
+@media (max-height: 635px) {
+	#promo-title {
+		padding: 1vh;
+	}
+
+	.product {
+		max-height: 12rem;
+	}
+
+	#promo-desc li {
+		font-size: 1.2rem;
+	}
+}

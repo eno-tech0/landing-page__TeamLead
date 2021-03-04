@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LevelUp</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<!-- PROMO -->
+
+	<div id="promo">
+		<div id="promo-block">
+			<h1 id="promo-title">LevelUp</h1>
+			<div id="promo-content">
+				<image src="media/prod.png" class="product" id="promo-image" alt="LevelUp"></image>
+				<div id="promo-desc">
+					<ul>
+						<li>Good product!</li>
+						<li>Awesome product!</li>
+						<li>Great product!</li>
+					</ul>
+				</div>
+			</div>
+			<a class="promo-order" href="#booking-content">Заказать</a>
+		</div>
+		<video loop="loop" preload="auto" autoplay="autoplay" poster="media/poster.jpg" id="promo-video">
+			<source src="media/video.mp4" type="video/mp4">
+			<source src="media/video.webm" type="video/webm">
+		</video>
+	</div>
+
+	<!-- STRUCTURE PRODUCT -->
+
+	<div id="structure">
+		<div id="structure-block">
+			<div id="structure-left">
+				<div class="structure-component">
+					<div class="component-content">
+						<image class="component-image" src="media/component.png" alt="component"></image>
+					</div>
+					<div class="component-desc">Description</div>
+				</div>
+				<div class="structure-component">
+					<div class="component-content">
+						<image class="component-image" src="media/component.png" alt="component"></image>
+					</div>
+					<div class="component-desc">Description</div>
+				</div>
+				<div class="structure-component">
+					<div class="component-content">
+						<image class="component-image" src="media/component.png" alt="component"></image>
+					</div>
+					<div class="component-desc">Description</div>
+				</div>
+			</div>
+	
+			<image id="product-photo" class="product" src="media/prod.png" alt="LevelUp"></image>
+	
+			<div id="structure-right">
+				<div class="structure-component">
+					<div class="component-content">
+						<image class="component-image" src="media/component.png" alt="component"></image>
+					</div>
+					<div class="component-desc">Description</div>
+				</div>
+				<div class="structure-component">
+					<div class="component-content">
+						<image class="component-image" src="media/component.png" alt="component"></image>
+					</div>
+					<div class="component-desc">Description</div>
+				</div>
+				<div class="structure-component">
+					<div class="component-content">
+						<image class="component-image" src="media/component.png" alt="component"></image>
+					</div>
+					<div class="component-desc">Description</div>
+				</div>
+			</div>
+		</div>
+
+		<a class="promo-order" href="#booking-content">Заказать</a>
+	</div>
+
+	<!-- REVIEWS -->
+
+	<div id="reviews">
+		<button class="reviews-btn prev"><</button>
+
+		<div class="review-content">
+			<image class="review-image" src="media/man-1.jpg" alt="photo"></image>
+			<h3 class="review-name">Alex</h3>
+			<p class="review-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui culpa harum laboriosam et molestias neque voluptates, nam repellendus, tempora tempore fugit tenetur. Autem aspernatur sit necessitatibus animi sint? Nesciunt, nisi.</p>
+		</div>
+		<div class="review-content hide">
+			<image class="review-image" src="media/man-2.jpg" alt="photo"></image>
+			<h3 class="review-name">Nick</h3>
+			<p class="review-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui culpa harum laboriosam et molestias neque voluptates, nam repellendus, tempora tempore fugit tenetur. Autem aspernatur sit necessitatibus animi sint? Nesciunt, nisi.</p>
+		</div>
+		<div class="review-content hide">
+			<image class="review-image" src="media/man-3.jpg" alt="photo"></image>
+			<h3 class="review-name">Mike</h3>
+			<p class="review-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui culpa harum laboriosam et molestias neque voluptates, nam repellendus, tempora tempore fugit tenetur. Autem aspernatur sit necessitatibus animi sint? Nesciunt, nisi.</p>
+		</div>
+
+		<button class="reviews-btn next">></button>
+	</div>
+
+	<!-- PROMO-2 -->
+
+	<div id="promotion">
+		<div id="promotion-content">
+			<image id="promotion-image" src="media/doctor.png" alt="photo"></image>
+			<div id="promotion-desc">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sed ab? Aperiam temporibus explicabo repudiandae placeat soluta beatae hic laboriosam, minima non natus labore at itaque voluptatem. Fuga, incidunt eveniet!</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sed ab? Aperiam temporibus explicabo repudiandae placeat soluta beatae hic laboriosam, minima non natus labore at itaque voluptatem. Fuga, incidunt eveniet!</p>
+			</div>
+		</div>
+		<ul>
+			<li>Good product!</li>
+			<li>Awesome product!</li>
+			<li>Great product!</li>
+		</ul>
+		<a class="promo-order" href="#booking-content">Заказать</a>
+	</div>
+
+	<!-- BOOKING FORM -->
+
+	<div id="booking-form">
+		<h2 id="booking-title">LevelUp</h2>
+		<div id="booking-timer">10:10:10</div>
+		<div id="booking-content">
+			<div id="booking-product">
+				<image id="booking-image" class="product" src="media/prod.png" alt="product"></image>
+				<div id="booking-price">
+					<span id="old-price">300 USD</span>
+					<span id="new-price">250 USD</span>
+				</div>
+			</div>
+			<form action="">
+				<h3>Name: </h3>
+				<div id="name-block">
+					<input type="text" id="booking-name" name="name">
+					<label for="booking-name">Ivan</label>
+				</div>
+				<h3>Phone: </h3>
+				<div id="phone-block">
+					<input type="number" id="booking-phone" name="phone">
+					<label for="booking-phone">+7 921 123 45 67</label>
+				</div>
+				<input type="submit" value="Отправить">
+			</form>
+		</div>
+	</div>
+
+	<script src="main.js"></script>
+
+</body>
+</html>
