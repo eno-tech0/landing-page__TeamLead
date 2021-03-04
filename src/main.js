@@ -4,28 +4,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	function carusel() {
 		const reviews = document.querySelectorAll('.review-content');
-		const container = document.querySelector('#reviews');
 		const next = document.querySelector('.reviews-btn.next');
 		const prev = document.querySelector('.reviews-btn.prev');
-	
 		let i = 0;
-		let touchX;
 
 		next.addEventListener('click', () => showReview(1));
 		prev.addEventListener('click', () => showReview(-1));
-		container.addEventListener('touchmove', (e) => {
-			const touches = e.touches[0].screenX;
-			if (!touchX) {
-				touchX = touches;
-			} else {
-				if (touches > touchX) showReview(1);
-				else showReview(-1);
-
-				touchX = null;
-			}
-		})
 		
-
 		function showReview(n) {
 			const sideToMove = n == -1 ? 'slider-right' : 'slider-left';
 
